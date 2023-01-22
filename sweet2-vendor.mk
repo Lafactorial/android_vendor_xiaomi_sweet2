@@ -300,7 +300,7 @@ PRODUCT_PACKAGES += \
     libmibokeh_712 \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
-    libmpbase \
+    libmpbase_vendor \
     libmulticam_image_optical_zoom \
     libmulticam_video_optical_zoom \
     libnotifyaudiohal \
