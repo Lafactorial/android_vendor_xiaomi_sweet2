@@ -2671,7 +2671,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -2701,7 +2700,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -2938,7 +2936,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -3082,7 +3079,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmpbase",
                 "libcdsprpc",
-                "libOpenCL",
+                "libarcsoft_hta",
+                "libhta_hexagon_runtime",
                 "liblog",
                 "libc",
                 "libm",
@@ -3091,7 +3089,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -3596,6 +3593,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhvx_interface",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhvx_interface.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmiai_portraitsupernight",
     owner: "xiaomi",
     strip: {
@@ -3745,10 +3766,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libOpenCL",
-                "libcdsprpc",
                 "libmialgo_utils",
-                "libc++_shared",
+                "libcdsprpc",
+                "libion",
                 "libm",
                 "libdl",
                 "libc",
@@ -3756,7 +3776,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -3833,7 +3852,6 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libion",
                 "libGLESv2",
-                "libgrallocutils",
                 "libmpbase",
                 "libarcsoft_beautyshot",
                 "libarcsoft_dualcam_refocus_image",
@@ -3863,6 +3881,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
