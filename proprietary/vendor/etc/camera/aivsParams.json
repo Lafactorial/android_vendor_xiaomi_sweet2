@@ -1,0 +1,95 @@
+{
+    "humanSeg_depth": {
+        "verify": ["mialgo-ai"],
+        "quantization": "int8",
+        "dlc_name": "seg_quantized.dlc",
+        "inputs": [
+            {
+                "name": "data",
+                "shape": [1, 256, 256, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "dpt",
+                "layer": "convolution_29",
+                "shape": [1, 256, 256, 1]
+            },
+            {
+                "name": "seg",
+                "layer": "softmax_0",
+                "shape": [1, 512, 512, 2]
+            }
+        ]
+    },
+    "saliency": {
+        "verify": ["mialgo-ai"],
+        "quantization": "int8",
+        "dlc_name": "ResNet256_clip0.3_cons_quan.dlc",
+        "inputs": [
+            {
+                "name": "data",
+                "shape": [1, 256, 256, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 256, 256, 1]
+            }
+        ]
+    },
+    "front_portrait_blur": {
+        "verify": ["mialgo-multicam"],
+        "quantization": "int8",
+        "dlc_name": "MiSeg_Preview_Common_RGB_snpe_sm8450_20220704_int8_3.1.000_quant.dlc",
+        "param_name": "front_seg_parameters.json",
+        "inputs": [
+            {
+                "name": "input",
+                "shape": [1, 256, 256, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 256, 256, 2]
+            }
+        ]
+    },
+    "portrait_blur":{
+        "verify": ["mialgo-multicam"],
+	    "quantization": "int8",
+        "dlc_name": "1122_8kase_with_softmax_quant_cle_bc.dlc",
+        "param_name": "portrait_blur_parameters.json",
+        "inputs": [
+            {
+                "name": "input",
+                "shape": [1, 512, 512, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 512, 512, 1]
+            }
+        ]
+    },
+    "mialgo_seg_ldc":{
+        "verify": ["mialgo-multicam"],
+	"quantization": "int8",
+        "dlc_name": "iter_885000_with_softmax_sim_quantized.dlc",
+        "inputs": [
+            {
+                "name": "input",
+                "shape": [1, 768, 768, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 768, 768, 2]
+            }
+        ]
+    }
+}

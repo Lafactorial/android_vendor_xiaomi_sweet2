@@ -548,7 +548,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_gc02m1",
+    name: "com.qti.sensor.sweet_gc02m1_macro",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -556,7 +556,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_gc02m1.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_gc02m1_macro.so",
             ],
             shared_libs: [
                 "libc++",
@@ -575,7 +575,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_imx355",
+    name: "com.qti.sensor.sweet_ov02b1b_depth",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -583,7 +583,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_imx355.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_ov02b1b_depth.so",
             ],
             shared_libs: [
                 "libc++",
@@ -602,7 +602,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_imx471_front",
+    name: "com.qti.sensor.sweet_ov16a1q_front",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -610,7 +610,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_imx471_front.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_ov16a1q_front.so",
             ],
             shared_libs: [
                 "libc++",
@@ -629,7 +629,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_ov02b1b",
+    name: "com.qti.sensor.sweet_s5k4h7_ultra",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -637,7 +637,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_ov02b1b.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_s5k4h7_ultra.so",
             ],
             shared_libs: [
                 "libc++",
@@ -656,7 +656,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_ov5675_macro",
+    name: "com.qti.sensor.sweet_s5khm2_wide",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -664,61 +664,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_ov5675_macro.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_s5kgw3",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_s5kgw3.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.sensor.sweet_s5khm2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_s5khm2.so",
+                "proprietary/vendor/lib64/camera/com.qti.sensor.sweet_s5khm2_wide.so",
             ],
             shared_libs: [
                 "libc++",
@@ -788,40 +734,6 @@ cc_prebuilt_library_shared {
                 "libmibokeh_712",
                 "libalLDC",
                 "libalhLDC",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.arcsoft.node.capturebokeh",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libcom.qti.chinodeutils",
-                "libcutils",
-                "libarcsoft_portrait_lighting",
-                "libarcsoft_portrait_lighting_c",
-                "libmpbase",
-                "libarcsoft_dualcam_refocus",
-                "libarcsoft_beautyshot",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -917,43 +829,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libmpbase",
-                "libxmi_high_dynamic_range",
-                "libhvx_interface",
-                "libxmi_hdr_checker",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.arcsoft.node.hdrchecker",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.arcsoft.node.hdrchecker.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libcom.qti.chinodeutils",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmpbase",
-                "libxmi_high_dynamic_range",
-                "libhvx_interface",
-                "libxmi_hdr_checker",
+                "libarcsoft_high_dynamic_range",
+                "libarcsoft_low_light_hdr",
                 "libc++",
                 "libc",
                 "libm",
@@ -983,7 +860,8 @@ cc_prebuilt_library_shared {
                 "libcom.qti.chinodeutils",
                 "libcutils",
                 "libmpbase",
-                "libarcsoft_dualcam_refocus",
+                "libarcsoft_dualcam_refocus_video",
+                "libarcsoft_dualcam_refocus_image",
                 "liblog",
                 "libc++",
                 "libc",
@@ -1117,12 +995,13 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libmialgo_sd",
+                "libarcsoft_hdr_detection",
                 "libc++_shared",
-                "libcamera_scene",
-                "libSNPE",
                 "libcamera_dirty",
-                "libxmi_high_dynamic_range",
-                "libxmi_hdr_checker",
+                "libcamera_scene",
+                "libsnpe_dsp_domains_v2",
+                "libSNPE",
+                "libsymphony-cpu",
                 "libc++",
                 "libc",
                 "libm",
@@ -2149,47 +2028,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/camera/components/com.vidhance.node.eis.so",
             ],
             shared_libs: [
-                "libcamera_metadata",
+                "liblog",
                 "libcom.qti.chinodeutils",
-                "libvidhance",
-                "libutils",
                 "libcutils",
-                "libui",
+                "libutils",
+                "libvidhance",
                 "libsensorslog",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.vidhance.stats.aec_dmbr",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libhidlbase",
-                "libhidltransport",
-                "android.frameworks.sensorservice@1.0",
-                "libvidhance",
-                "libutils",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -2252,9 +2097,8 @@ cc_prebuilt_library_shared {
                 "libcom.qti.chinodeutils",
                 "libutils",
                 "libcutils",
-                "libarcsoft_portrait_lighting",
-                "libarcsoft_portrait_lighting_c",
-                "libmibokeh_712",
+                "libmiphone_preview_bokeh",
+                "libmialgo_aio_seg",
                 "liblog",
                 "libc++",
                 "libc",
@@ -2487,6 +2331,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libmegface",
                 "libMegviiFacepp-0.5.2",
+                "liblz4",
                 "libz",
                 "libdl",
                 "libc",
@@ -2529,47 +2374,9 @@ cc_prebuilt_library_shared {
                 "libmialgo_utils",
                 "libion",
                 "libmialgo_rfs",
+                "libcdsprpc",
+                "libOpenCL",
                 "libremosaic_wrapper",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "fingerprint.fortsense.sm6150",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.fortsense.sm6150.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "libhidltransport",
-                "android.hidl.memory@1.0",
-                "android.hidl.memory.token@1.0",
-                "android.hidl.allocator@1.0",
-                "libhidlmemory",
-                "libhardware",
-                "libhwbinder",
-                "vendor.sw.swfingerprint@2.0",
-                "libbinder",
-                "libQSEEComAPI",
-                "libion",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -2596,10 +2403,11 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libutils",
+                "libcutils",
                 "libhidlbase",
                 "libhidltransport",
-                "libhwbinder",
-                "libcutils",
+                "android.hardware.biometrics.fingerprint@2.1",
+                "com.fingerprints.extension@1.0",
                 "libQSEEComAPI",
                 "libion",
                 "libc++",
@@ -2690,6 +2498,80 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSnpeHtpPrepare",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libSnpeHtpPrepare.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libSnpeHtpV68Stub",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libSnpeHtpV68Stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libSnpeHtpV69Stub",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libSnpeHtpV69Stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libVDClearShot",
     owner: "xiaomi",
     strip: {
@@ -2729,30 +2611,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_sr_models",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_sr_models.so",
-            ],
-            shared_libs: [
-                "libc++_shared",
-                "libm",
-                "libdl",
-                "libc",
             ],
         },
     },
@@ -2917,7 +2775,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libarcsoft_beautyshot.so",
             ],
             shared_libs: [
-                "libc++_shared",
                 "libmpbase",
                 "liblog",
                 "libc",
@@ -2957,7 +2814,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus",
+    name: "libarcsoft_dualcam_refocus_image",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -2965,35 +2822,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus.so",
-            ],
-            shared_libs: [
-                "libarcsoft_dualcam_refocus_rear_t",
-                "libarcsoft_dualcam_refocus_rear_w",
-                "libarcsoft_dualcam_refocus_front",
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus_front",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_front.so",
+                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -3010,7 +2839,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus_rear_t",
+    name: "libarcsoft_dualcam_refocus_video",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -3018,7 +2847,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so",
+                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -3035,7 +2864,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus_rear_w",
+    name: "libarcsoft_hdr_detection",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -3043,7 +2872,32 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so",
+                "proprietary/vendor/lib64/libarcsoft_hdr_detection.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_high_dynamic_range",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -3076,6 +2930,56 @@ cc_prebuilt_library_shared {
                 "libhta_hexagon_runtime",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_low_light_hdr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_low_light_hdr.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_mf_superresolution",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_mf_superresolution.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -3173,8 +3077,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmpbase",
                 "libcdsprpc",
-                "libarcsoft_hta",
-                "libhta_hexagon_runtime",
+                "libOpenCL",
                 "liblog",
                 "libc",
                 "libm",
@@ -3306,6 +3209,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libSNPE",
+                "libsnpe_dsp_domains_v2",
+                "libsnpe_dsp_domains_v3",
+                "libc++_shared",
                 "liblog",
                 "libm",
                 "libc",
@@ -3645,8 +3551,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libhta.so",
             ],
             shared_libs: [
-                "libcdsprpc",
                 "liblog",
+                "libcdsprpc",
                 "libm",
                 "libdl",
                 "libc",
@@ -3684,30 +3590,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhvx_interface",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhvx_interface.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libm",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmiai_portraitsupernight",
     owner: "xiaomi",
     strip: {
@@ -3725,6 +3607,61 @@ cc_prebuilt_library_shared {
                 "libOpenCL",
                 "libc",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmialgo_ai_vision",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmialgo_ai_vision.so",
+            ],
+            shared_libs: [
+                "libSNPE",
+                "libc++_shared",
+                "libm",
+                "liblog",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmialgo_aio_seg",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmialgo_aio_seg.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libmialgo_ai_vision",
+                "libmialgo_utils",
+                "libcdsprpc",
+                "libOpenCL",
+                "libm",
+                "libc++_shared",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -3802,9 +3739,10 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libmialgo_utils",
+                "libOpenCL",
                 "libcdsprpc",
-                "libion",
+                "libmialgo_utils",
+                "libc++_shared",
                 "libm",
                 "libdl",
                 "libc",
@@ -3853,8 +3791,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmialgo_utils.so",
             ],
             shared_libs: [
-                "libcdsprpc",
-                "libOpenCL",
                 "liblog",
                 "libc++_shared",
                 "libm",
@@ -3880,9 +3816,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmialgoengine.so",
             ],
             shared_libs: [
-                "libxmi_high_dynamic_range",
-                "libhvx_interface",
-                "libxmi_hdr_checker",
+                "libarcsoft_high_dynamic_range",
+                "libarcsoft_low_light_hdr",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -3894,7 +3829,8 @@ cc_prebuilt_library_shared {
                 "libgrallocutils",
                 "libmpbase",
                 "libarcsoft_beautyshot",
-                "libarcsoft_dualcam_refocus",
+                "libarcsoft_dualcam_refocus_image",
+                "libarcsoft_dualcam_refocus_video",
                 "libarcsoft_portrait_lighting",
                 "libarcsoft_portrait_lighting_c",
                 "libarcsoft_distortion_correction",
@@ -3905,9 +3841,12 @@ cc_prebuilt_library_shared {
                 "libbeauty_face_interface",
                 "libmiai_portraitsupernight",
                 "librelight_only",
+                "libcdsprpc",
+                "libOpenCL",
                 "libmibokeh_712",
-                "libsdk_sr",
-                "lib_sr_models",
+                "libarcsoft_mf_superresolution",
+                "libmiphone_capture_bokeh",
+                "libmialgo_aio_seg",
                 "libxml2_vendor",
                 "libc++",
                 "libc",
@@ -3939,6 +3878,62 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmiphone_capture_bokeh",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmiphone_capture_bokeh.so",
+            ],
+            shared_libs: [
+                "libmialgo_utils",
+                "libOpenCL",
+                "libcdsprpc",
+                "libc++_shared",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmiphone_preview_bokeh",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmiphone_preview_bokeh.so",
+            ],
+            shared_libs: [
+                "libmialgo_utils",
+                "libOpenCL",
+                "libcdsprpc",
+                "libc++_shared",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -4104,7 +4099,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpn553_fw",
+    name: "libpn557_fw",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4112,7 +4107,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libpn553_fw.so",
+                "proprietary/vendor/lib64/libpn557_fw.so",
             ],
         },
     },
@@ -4188,32 +4183,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdk_sr",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdk_sr.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libOpenCL",
-                "libdl",
-                "libc++_shared",
-                "libc",
             ],
         },
     },
@@ -4393,6 +4362,31 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libdl",
                 "libcdsprpc_system",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnpe_dsp_domains_v3",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsnpe_dsp_domains_v3.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libcdsprpc",
                 "libm",
                 "libc",
             ],
@@ -4853,7 +4847,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxmi_hdr_checker",
+    name: "libvidhance_active_ois",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4861,14 +4855,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libxmi_hdr_checker.so",
+                "proprietary/vendor/lib64/libvidhance_active_ois.so",
             ],
             shared_libs: [
-                "libc",
-                "libz",
+                "libvidhance",
                 "libdl",
                 "libm",
                 "liblog",
+                "libc++",
+                "libc",
             ],
         },
     },
@@ -4878,7 +4873,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxmi_high_dynamic_range",
+    name: "libvidhance_face_stabilizer",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4886,15 +4881,119 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libxmi_high_dynamic_range.so",
+                "proprietary/vendor/lib64/libvidhance_face_stabilizer.so",
             ],
             shared_libs: [
+                "libvidhance",
+                "libdl",
                 "libm",
                 "liblog",
-                "libz",
-                "libOpenCL",
+                "libc++",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_horizon_correction",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_horizon_correction.so",
+            ],
+            shared_libs: [
+                "libvidhance",
                 "libdl",
+                "libm",
+                "liblog",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_ldc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_ldc.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_stabilizer",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_stabilizer.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_super_stabilization",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_super_stabilization.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc++",
+                "libc",
             ],
         },
     },
@@ -5054,34 +5153,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.sw.swfingerprint@2.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.sw.swfingerprint@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "capi_v2_aptX_CLHDAD_Encoder",
     filename: "capi_v2_aptX_CLHDAD_Encoder.so",
@@ -5128,6 +5199,24 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+    name: "libSnpeHtpV68Skel",
+    filename: "libSnpeHtpV68Skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libSnpeHtpV69Skel",
+    filename: "libSnpeHtpV69Skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
     name: "libVC1Dec",
     filename: "libVC1Dec.so",
     owner: "xiaomi",
@@ -5164,19 +5253,19 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_dualcam_refocus_skel",
-    filename: "libarcsoft_dualcam_refocus_skel.so",
+    name: "libarcsoft_hdrplus_hvx_skel",
+    filename: "libarcsoft_hdrplus_hvx_skel.so",
     owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so",
+    src: "proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_hdrplus_hvx_skel",
-    filename: "libarcsoft_hdrplus_hvx_skel.so",
+    name: "libcalculator_skel",
+    filename: "libcalculator_skel.so",
     owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so",
+    src: "proprietary/vendor/lib/rfsa/adsp/libcalculator_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
@@ -5290,10 +5379,19 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_rfs_cdsp_skel",
-    filename: "libmialgo_rfs_cdsp_skel.so",
+    name: "libmialgo_basic_cdsp_skel",
+    filename: "libmialgo_basic_cdsp_skel.so",
     owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so",
+    src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libmialgo_mc_bokeh_cdsp_skel",
+    filename: "libmialgo_mc_bokeh_cdsp_skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
@@ -5335,6 +5433,15 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+    name: "libsnpe_dsp_v68_domains_v3_skel",
+    filename: "libsnpe_dsp_v68_domains_v3_skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
     name: "libsns_device_mode_skel",
     filename: "libsns_device_mode_skel.so",
     owner: "xiaomi",
@@ -5366,15 +5473,6 @@ prebuilt_rfsa {
     filename: "misound_karaokemix_res.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "misound_res",
-    filename: "misound_res.bin",
-    owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/misound_res.bin",
     relative_install_path: "adsp",
     soc_specific: true,
 }
