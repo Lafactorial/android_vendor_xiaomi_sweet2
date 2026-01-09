@@ -5856,7 +5856,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbase_shim",
-                "dolbycodec_shim",
                 "android.hardware.graphics.bufferqueue@1.0",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.graphics.common@1.0",
