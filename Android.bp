@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/xiaomi/sweet2",
         "hardware/qcom-caf/sm8150",
         "hardware/xiaomi",
         "vendor/qcom/opensource/display",
@@ -5854,6 +5855,8 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcodec2_hidl@1.0_sp.so",
             ],
             shared_libs: [
+                "libbase_shim",
+                "dolbycodec_shim",
                 "android.hardware.graphics.bufferqueue@1.0",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.graphics.common@1.0",
@@ -5868,7 +5871,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libstagefright_bufferpool@2.0.1",
-                "libui",
+                "libui_sp",
                 "libutils",
                 "libstagefright_bufferqueue_helper",
                 "libcodec2_hidl_plugin_sp",
@@ -6196,7 +6199,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
